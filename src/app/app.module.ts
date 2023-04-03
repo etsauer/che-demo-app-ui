@@ -7,6 +7,7 @@ import { RandomThoughtsComponent } from './random-thoughts/random-thoughts.compo
 import { AddRandomThoughtComponent } from './add-random-thought/add-random-thought.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { RandomThoughtsService } from './random-thoughts.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,9 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    RandomThoughtsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
