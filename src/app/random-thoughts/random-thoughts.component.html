@@ -1,1 +1,11 @@
-<p>random-thoughts works!</p>
+<p>Random Thoughts</p>
+<div>
+  <button (click)="getThoughts();">Get Random Thoughts</button>
+</div>
+
+<div *ngIf="thoughts">
+  <ul >
+    <li><a><span>ID:</span>Thought:</a></li>
+    <li *ngFor="let thought of thoughts"><a> <span>{{thought.thoughtId}}</span>{{thought.thought}}</a></li>
+  </ul>
+</div>

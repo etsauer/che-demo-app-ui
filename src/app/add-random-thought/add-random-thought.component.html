@@ -1,0 +1,10 @@
+<p>Add a Random Thought</p>
+<div>
+  <form (ngSubmit)="addThought()" #addThoughtForm="ngForm">
+    <div>
+      <label>Random Thought</label>
+      <input type="text" id="random-thought" required [(ngModel)]="randomThought.thought" name="RandomThought">
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</div>
