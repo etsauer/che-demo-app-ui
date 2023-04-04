@@ -5,7 +5,7 @@
 
 <div *ngIf="thoughts">
   <ul >
-    <li><a><span>ID:</span>Thought:</a></li>
-    <li *ngFor="let thought of thoughts"><a> <span>{{thought.thoughtId}}</span>{{thought.thought}}</a></li>
+    <li><a><span>Thought:</span>ID:</a></li>
+    <li *ngFor="let thought of thoughts"><a> <span>{{thought.randomThought}}: </span>{{thought.thoughtId}}</a></li>
   </ul>
 </div>
