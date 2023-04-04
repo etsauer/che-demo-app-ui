@@ -16,12 +16,12 @@ export class RandomThoughtsService {
   constructor(private http: HttpClient) { }
 
   getThoughts(): Observable<RandomThought[]> {
-    const url = `${environment.backendApiUrl}/thoughts`;
+    const url = `${environment.backendApiUrl}/random-thoughts/thoughts`;
     return this.http.get<RandomThought[]>( url, httpOptions);
   }
 
   saveThought(thought: RandomThought): Observable<any> {
-    const url = `${environment.backendApiUrl}/save-thought`;
+    const url = `${environment.backendApiUrl}/random-thoughts/save-thought`;
     return this.http.post(url, thought, httpOptions);
   }
 }
